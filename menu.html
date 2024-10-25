@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="menu.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Logo">
+                <span>Book A Bite</span>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Food Menu</a></li>
+                    <li><a href="book.html">Book Table</a></li>
+                </ul>
+            </nav>
+
+                <a href="#"><i class="fas fa-home"></i></a>
+                <div class="icons">
+                    <input type="text" class="search-bar" placeholder="Search...">
+                </div>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+
+            <!-- Example of Menu Item -->
+            <div class="menu-item">
+                <img src="menu1.jpg" alt="Menu Item 1">
+                <h3>Menu Item 1</h3>
+                <p>$12.99</p>
+                <button class="add-to-cart" onclick="addToCart('Menu Item 1')">+</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu2.jpg" alt="Menu Item 2">
+                <h3>Menu Item 2</h3>
+                <p>$15.99</p>
+                <button class="add-to-cart" onclick="addToCart('Menu Item 2')">+</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu3.jpg" alt="Menu Item 3">
+                <h3>Menu Item 3</h3>
+                <p>$10.99</p>
+                <button class="add-to-cart" onclick="addToCart('Menu Item 3')">+</button>
+            </div>
+            <div class="menu-item">
+                <img src="menu1.jpg" alt="Menu Item 1">
+                <h3>Menu Item 1</h3>
+                <p>$12.99</p>
+                <button class="add-to-cart" onclick="addToCart('Menu Item 1')">+</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu2.jpg" alt="Menu Item 2">
+                <h3>Menu Item 2</h3>
+                <p>$15.99</p>
+                <button class="add-to-cart" onclick="addToCart('Menu Item 2')">+</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu3.jpg" alt="Menu Item 3">
+                <h3>Menu Item 3</h3>
+                <p>$10.99</p>
+                <button class="add-to-cart" onclick="addToCart('Menu Item 3')">+</button>
+            </div>
+            <div class="menu-item">
+                <img src="menu1.jpg" alt="Menu Item 1">
+                <h3>Menu Item 1</h3>
+                <p>$12.99</p>
+                <button class="add-to-cart" onclick="addToCart('Menu Item 1')">+</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu2.jpg" alt="Menu Item 2">
+                <h3>Menu Item 2</h3>
+                <p>$15.99</p>
+                <button class="add-to-cart" onclick="addToCart('Menu Item 2')">+</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu3.jpg" alt="Menu Item 3">
+                <h3>Menu Item 3</h3>
+                <p>$10.99</p>
+                <button class="add-to-cart" onclick="addToCart('Menu Item 3')">+</button>
+            </div> 
+        </div>
+        <button id="addMenuBtn">Add More Menu Item</button>
+    </section>
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <p id="totalAmount"></p>
+        <button onclick="finalizeOrder()">Finalize Order</button> <!-- Finalize order button -->
+    </section>    
+    <section id="booking">
+        <h1>Book a Table</h1>
+        <p>Reserve your spot at our restaurant.</p>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="tableNumber">Table Number:</label>
+                <input type="number" id="tableNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="totalPeople">Total People:</label>
+                <input type="number" id="totalPeople" required>
+            </div>
+            <div class="form-group">
+                <label for="specialRequest">Special Request (optional):</label>
+                <textarea id="specialRequest"></textarea>
+            </div>
+            <script>
+                function goToPage2() {
+                    window.location.href = 'book.html'; // Change to the name of your second HTML file
+                }
+            </script>
+            <button type="submit">Book Table</button>
+            <button onclick="goToPage2()">check out</button>
+            
+        </form>
+        <div id="bookingConfirmation" class="hidden"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Namkueen Gatshel. All Rights Reserved.</p>
+    </footer>
+    <script src="menu.js"></script>
+</body>
+</html>

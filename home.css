@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e3b882;
+}
+
+header {
+    background-color: #de9885;
+    padding: 3%;
+    border-bottom: 1px solid #e0d5c1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo span {
+    font-size:auto;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #f0f3f3;
+}
+
+.icons a {
+    margin:1%; 
+    align-items: right;
+    color: #0f0e0e;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #0c66c1;
+}
+
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.description {
+    max-width: 50%;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.content-section {
+    display: flex; 
+    align-items: center; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #fff; 
+}
+
+.description {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.image-container img {
+    position: right;
+    width: 300px; 
+    height: auto; 
+}
+.menu-section {
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin: 20px auto; 
+}
+
+.menu-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.menu-item {
+    display: flex; 
+    align-items: center; 
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+.menu-item img {
+    width: 100px;
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.menu-details {
+    flex-grow: 1; 
+}
+.popular-items {
+    padding: 20px; 
+    background-color: #f8f8f8; 
+}
+
+.item-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #fff; 
+    padding: 10px; 
+}
+
+.item {
+    display: flex; 
+    align-items: center;
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+.item img {
+    width: 100px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+/* Subscribe Section */
+.subscribe {
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.subscribe button {
+    padding: 10px;
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .description, .intro-image {
+        max-width: 100%;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-items, .popular-items-container {
+        flex-wrap: wrap; 
+    }
+}
